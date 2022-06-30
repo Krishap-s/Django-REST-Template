@@ -1,0 +1,35 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Krishap-s", email = "krishap.s.sreenivasan@gmail.com"},
+]
+dependencies = [
+    "dj-database-url>=0.5.0",
+    "python-dotenv>=0.20.0",
+    "yapf>=0.32.0",
+    "isort>=5.10.1",
+    "django==3.2",
+    "djangorestframework>=3.13.1",
+    "uvicorn>=0.18.2",
+    "markdown>=3.3.7",
+    "django-filter>=22.1",
+    "whitenoise>=6.2.0",
+    "setuptools>=62.6.0",
+    "psycopg2-binary>=2.9.3",
+    "toml>=0.10.2",
+    "djangorestframework-simplejwt>=5.2.0",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool]
+[tool.pdm]
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
+
+[style]
+based_on_style = "google"
