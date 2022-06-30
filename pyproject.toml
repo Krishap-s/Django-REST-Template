@@ -8,8 +8,6 @@ authors = [
 dependencies = [
     "dj-database-url>=0.5.0",
     "python-dotenv>=0.20.0",
-    "yapf>=0.32.0",
-    "isort>=5.10.1",
     "django==3.2",
     "djangorestframework>=3.13.1",
     "uvicorn>=0.18.2",
@@ -20,12 +18,25 @@ dependencies = [
     "psycopg2-binary>=2.9.3",
     "toml>=0.10.2",
     "djangorestframework-simplejwt>=5.2.0",
+    "psycopg2>=2.9.3",
+    "coverage>=6.4.1",
+    "drf-spectacular>=0.22.1",
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 license = {text = "MIT"}
+[project.optional-dependencies]
 
 [tool]
 [tool.pdm]
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.1.2",
+    "tox>=3.25.1",
+]
+dev = [
+    "isort>=5.10.1",
+    "yapf>=0.32.0",
+]
 
 [build-system]
 requires = ["pdm-pep517>=0.12.0"]
@@ -33,3 +44,4 @@ build-backend = "pdm.pep517.api"
 
 [style]
 based_on_style = "google"
+

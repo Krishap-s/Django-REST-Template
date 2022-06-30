@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "__pypackages__/<major.minor>/lib",
+        "./__pypackages__/3.10/lib",
+        "./__pypackages__/3.8/lib"
+    ]
+}
