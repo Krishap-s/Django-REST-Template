@@ -30,14 +30,8 @@ jobs:
       run: tox
 
     - name: Code Coverage Summary Report
-      uses: irongut/CodeCoverageSummary@v1.2.0
+      uses: codecov/codecov-action@v3
       with:
-        filename: coverage.xml
-        badge: true
-        fail_below_min: true
-        format: markdown
-        hide_branch_rate: false
-        hide_complexity: true
-        indicators: true
-        output: both
-        thresholds: '60 80'
+        files: coverage.xml
+        name: django-REST-boilerplate
+        verbose: true
