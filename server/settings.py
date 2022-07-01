@@ -26,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = environ.get("SECRET_KEY", "SECRET")
+SECRET_KEY = environ.get('SECRET_KEY', 'SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = environ.get("DEBUG", True)
+DEBUG = environ.get('DEBUG', True)
 
 ALLOWED_HOSTS = ['*']
 
@@ -83,15 +83,13 @@ ASGI_APPLICATION = 'server.asgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 default_database = dj_database_url.config(conn_max_age=600)
-default_database.update({
-    'TEST':{
-        'NAME': 'test2',
-    }
-})
+default_database.update({'TEST': {
+    'NAME': 'test2',
+}})
 
 DATABASES = {
     'default': default_database,
-    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -139,16 +137,16 @@ STATIC_ROOT = BASE_DIR.joinpath('static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# REST Framework 
+# REST Framework
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    'DEFAULT_AUTHENTICATION_CLASSES':
+    ('rest_framework_simplejwt.authentication.JWTAuthentication', ),
+    'DEFAULT_SCHEMA_CLASS':
+    'drf_spectacular.openapi.AutoSchema',
 }
 
-# Drf-spectacular 
+# Drf-spectacular
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Django REST boilerplate',
@@ -156,5 +154,3 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
 }
-
-
