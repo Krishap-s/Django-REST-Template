@@ -11,4 +11,4 @@ updates:
       interval: "monthly"
     ignore:
       - dependency-name: "django"
-        versions: ["4.x","5.x"]
+        versions: [">=4.0.0"]
