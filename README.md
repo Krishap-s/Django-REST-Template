@@ -7,9 +7,17 @@
 A preset and reliable django boilerplate for projects with ridiculously short deadlines. Django-REST-template helps with providing all initial backend devops out of box, so that you can focus on other important things.
 
 ## Features
+- Swagger and redocs setup
+- Database URL setup
+- SimpleJWT authorization setup
+- Sample User routes
+
+## Dev Features
 - Depandabot updates 
 - Testing and codecoverage with tox
+- DockerFile and docker-compose deployment
 - Linting
+
 
 ## Installation
 ```
