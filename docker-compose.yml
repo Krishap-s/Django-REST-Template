@@ -4,11 +4,13 @@ services:
   db:
     image: postgres
     container_name: db
+    ports:
+      - "5432:5432"
     volumes:
       - /VAR/LIB/POSTGRESQL/DATA:/custom/mount
     environment:
-      - POSTGRES_DB=testing
-      - POSTGRES_USER=testing
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
   web:
     build: .
@@ -17,7 +19,7 @@ services:
       - "8000:8000"
     environment:
       - DEBUG=True
-      - DATABASE_URL=postgres://testing:password@localhost:5432/testing
+      - DATABASE_URL=postgres://postgres:password@db/postgres
     depends_on:
       - db
 
