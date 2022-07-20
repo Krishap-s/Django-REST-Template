@@ -42,5 +42,5 @@ uvicorn==0.18.2
 virtualenv==20.15.1
 whitenoise==6.2.0
 yapf==0.32.0
-zipp==3.8.0
+zipp==3.8.1
 
