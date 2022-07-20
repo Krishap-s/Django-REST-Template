@@ -17,7 +17,7 @@ inflection==0.5.1
 iniconfig==1.1.1
 isort==5.10.1
 jsonschema==4.6.1
-markdown==3.3.7
+markdown==3.4.1
 packaging==21.3
 platformdirs==2.5.2
 pluggy==1.0.0
