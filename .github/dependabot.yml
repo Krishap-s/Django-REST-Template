@@ -8,7 +8,9 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
+      # Check for pip updates on Sundays
+      day: "sunday"
     ignore:
       - dependency-name: "django"
         versions: [">=4.0.0"]
