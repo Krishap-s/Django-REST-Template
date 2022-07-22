@@ -6,6 +6,10 @@
 
 A preset and reliable django boilerplate for projects with ridiculously short deadlines. Django-REST-template helps with providing all initial backend devops out of box, so that you can focus on other important things.
 
+## Libraries
+- Django 3.2 ([Long Term Support](https://www.djangoproject.com/download/))
+- Python 3.7,3.8,3.9,3.10
+
 ## Features
 - Swagger and redocs setup
 - Database URL setup
@@ -39,5 +43,6 @@ pyenv install 3.7.x
 pyenv install 3.8.x
 pyenv install 3.9.x
 pyenv install 3.10.x
+pyenv local 3.7.x 3.8.x 3.9.x 3.10.x
 tox -v
 ```
