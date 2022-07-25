@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = environ.get('SECRET_KEY', 'SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = environ.get('DEBUG', True)
+DEBUG = environ.get('DEBUG', 'TRUE') == 'TRUE'
 
 ALLOWED_HOSTS = ['*']
 
