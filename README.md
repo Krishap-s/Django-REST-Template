@@ -24,12 +24,15 @@ A preset and reliable django boilerplate for projects with ridiculously short de
 
 
 ## Installation
+1) Select 'Use This Template' option in github
+2) Create repository 
+2) After installation run commands
 ```
 python -m venv venv
 pip install -r requirements.txt
 ./manage.py migrate
 ```
-> Note: Change the badge urls to your project's current repository
+> Note: Change the badge urls in the README to your project's current repository
 
 ## Run server
 ```
