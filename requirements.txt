@@ -9,7 +9,7 @@ django-filter==22.1
 djangorestframework==3.13.1
 djangorestframework-simplejwt==5.2.0
 drf-spectacular==0.23.1
-filelock==3.7.1
+filelock==3.8.0
 h11==0.13.0
 importlib-metadata==4.12.0
 importlib-resources==5.9.0
