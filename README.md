@@ -34,6 +34,9 @@ pip install -r requirements.txt
 ```
 > Note: Change the badge urls in the README to your project's current repository
 
+## Setup
+The `settings.py`, root URL conf and other important configuration files are located in `server\` for any further configuration 
+
 ## Run server
 ```
 uvicorn --env-file .env server.asgi:application
