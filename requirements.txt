@@ -11,7 +11,7 @@ djangorestframework-simplejwt==5.2.0
 drf-spectacular==0.24.2
 filelock==3.8.0
 h11==0.14.0
-importlib-metadata==4.12.0
+importlib-metadata==5.0.0
 importlib-resources==5.9.0
 inflection==0.5.1
 iniconfig==1.1.1
