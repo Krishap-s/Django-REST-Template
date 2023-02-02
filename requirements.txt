@@ -36,7 +36,7 @@ toml==0.10.2
 tomli==2.0.1
 tox==3.26.0
 uritemplate==4.1.1
-uvicorn==0.18.3
+uvicorn==0.20.0
 virtualenv==20.16.5
 whitenoise==6.2.0
 yapf==0.32.0
