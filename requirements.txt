@@ -7,7 +7,7 @@ dj-database-url==1.0.0
 Django==3.2.16
 django-filter==22.1
 djangorestframework==3.14.0
-djangorestframework-simplejwt==5.2.1
+djangorestframework-simplejwt==5.2.2
 drf-spectacular==0.24.2
 filelock==3.8.0
 h11==0.14.0
